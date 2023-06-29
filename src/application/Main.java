@@ -19,10 +19,7 @@ public class Main extends Application {
 			
 			Scene scene = new Scene(root);
 			
-			scene.setOnKeyPressed(new EventHandler<KeyEvent>() {
-
-				@Override
-				public void handle(KeyEvent event) {
+			scene.setOnKeyPressed(event -> {
 					
 //					System.out.println(event.getCode());
 //					String keyValue = event.getCode().toString();
@@ -44,7 +41,7 @@ public class Main extends Application {
 							System.out.println(event.getCode().toString() + " was pressed");
 					}
 				
-				}});
+			});
 			
 			
 			primaryStage.setScene(scene);
