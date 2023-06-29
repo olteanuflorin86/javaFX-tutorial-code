@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="253.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label fx:id="myLabel" contentDisplay="CENTER" layoutX="130.0" layoutY="75.0" text="Select what you want to eat">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rButton1" layoutX="122.0" layoutY="150.0" mnemonicParsing="false" onAction="#getFood" text="pizza">
+         <toggleGroup>
+            <ToggleGroup fx:id="food" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rButton2" layoutX="233.0" layoutY="150.0" mnemonicParsing="false" onAction="#getFood" text="sushi" toggleGroup="$food" />
+      <RadioButton fx:id="rButton3" layoutX="351.0" layoutY="150.0" mnemonicParsing="false" onAction="#getFood" text="ramen" toggleGroup="$food" />
+   </children>
+</AnchorPane>
